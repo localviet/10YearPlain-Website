@@ -3,9 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2030</title>
+    <style>
+        body {
+            background-color: 	#fbf4e6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 10.5vw;
+            margin-top: 0;
+            border-bottom: solid;
+            border-color: #468ce6;
+            color: #689fe8;
+            text-shadow: 3px 0 #468ce6, -3px 0 #468ce6, 0 3px #468ce6, 0 -2px #468ce6,
+               1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6;
+
+        }
+        #backBtn {
+            height: 80px;
+            width: 80px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 5vw;
+            font-family: monospace;
+        }
+        .info {
+            background-color: #f4d0af;
+            padding: 13px 13px;
+            border-radius: 7px;
+            
+        }
+        .text {
+            /*display: inline-block; */
+
+            margin: 0 10px 0 50px;
+            font-size: 5vw;
+            max-width: 63vw;
+            text-align: center;
+            font-family: cursive;
+
+        }
+        .pic {
+            margin: 0 50px 0 50px;
+            width: 60vw;
+            height: auto;
+            border: 1px solid #468ce6;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #8bb8f2;
+        }
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: 	#fbf4e6;
+            }
+            h1 {
+                text-align: center;
+                font-size: 5vw;
+                margin-top: 0;
+                border-bottom: solid;
+                border-color: #468ce6;
+                color: #689fe8;
+                text-shadow: 3px 0 #468ce6, -3px 0 #468ce6, 0 3px #468ce6, 0 -2px #468ce6,
+                   1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6;
+    
+            }
+            #backBtn {
+                height: 50px;
+                width: 50px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 2.6vw;
+            }
+            .info {
+                background-color: #f4d0af;
+                padding: 13px 13px;
+                border-radius: 7px;
+                text-align: center;
+                margin: 0 3vw 0 3vw;
+            }
+            .text {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px 0 30px;
+                font-size: 1.3vw;
+                max-width: 56.7vw;
+    
+            }
+            .pic{
+                width: 20vw;
+                height: auto;
+                border: 1px solid #468ce6;
+                border-radius: 4px;
+                padding: 5px;
+                background-color: #8bb8f2;
+            }
+        }
+    </style>
+    
 </head>
 <body>
-    heyyy
+    <h1>2030</h1>
+    <img id="backBtn" src="images/back.png" alt="">
+    <div>
+        <div class="block">
+            <h2>Finding a Home</h2>
+            <div class="info">
+                <img class="pic" src="images/home.jpeg" alt="">
+                <div class="text">
+                    <p>Having finished college, it is time to have a home, whether it's an apartment or commiting to a house. Currently not too sure whether to stay near parents or not, but
+                        even my parents would agree to go to where the money is. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <h2>Dieting / Cooking</h2>
+            <div class="info">
+                <img class="pic" src="images\diet.jpg" alt="">
+                <div class="text">
+                    <p>I most likely was living an unhealthy life style in college, and health should be a top priority at this age. Thus, I should maintain/improve my health by doing
+                        atleast some of these practices:
+                    </p>
+                    <ul>
+                        <li>Going on Runs <strong>REGULARLY</strong></li>
+                        <li>Limit Eating Out - Around 3 times per week to focus on meal preping -</li>
+                        <li>Be comfortable in a sport and hopefully a community/team</li>
+                        <li>WATER DRINK WATERR!!11!!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <h2>Connecting to Culture</h2>
+            <div class="info">
+                <img class="pic" src="images\culture.jpg" alt="">
+                <div class="text">
+                    <p>One of my biggest fears is being disconnected from my culture. To prevent this, I will want to travel to my country of Vietnam occasionally to enhance
+                        speaking and to live the lifestyle. <br><br><br>
+                        <strong>I WON'T LEAVE MY CULTURE BEHIND</strong>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const backButton = document.getElementById("backBtn");
+
+        backButton.addEventListener("click", function(){ window.location.href = "../index.html"})
+    </script>
 </body>
 </html>
