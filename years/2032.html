@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2032</title>
+    <meta name="theme-color" content="#f29aa1"/>
+    <style>
+        body {
+            background: linear-gradient(-20deg, rgb(135, 198, 250), rgb(198, 181, 255), rgb(255, 141, 255));
+        }
+        h1 {
+            text-align: center;
+            font-size: 10.5vw;
+            margin-top: 0;
+            border-bottom: solid;
+            border-color: #468ce6;
+            color: #689fe8;
+            text-shadow: 1px 0 #468ce6, -1px 0 #468ce6, 0 1px #468ce6, 0 -1px #468ce6,
+            1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6
+
+        }
+        #backBtn {
+            height: 80px;
+            width: 80px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 5vw;
+            font-family: monospace;
+        }
+        .info {
+            background-color: #f4d0af;
+            padding: 13px 13px;
+            border-radius: 7px;
+            
+        }
+        .text {
+            /*display: inline-block; */
+
+            margin: 0 10px 0 50px;
+            font-size: 5vw;
+            max-width: 63vw;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        .pic {
+            margin: 0 50px 0 50px;
+            width: 60vw;
+            height: auto;
+            border: 1px solid #468ce6;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #8bb8f2;
+        }
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: 	#fbf4e6;
+            }
+            h1 {
+                text-align: center;
+                font-size: 5vw;
+                margin-top: 0;
+                border-bottom: solid;
+                border-color: #468ce6;
+                color: #689fe8;
+                text-shadow: 3px 0 #468ce6, -3px 0 #468ce6, 0 3px #468ce6, 0 -2px #468ce6,
+                   1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6;
+    
+            }
+            #backBtn {
+                height: 50px;
+                width: 50px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 2.6vw;
+            }
+            .info {
+                background-color: #f4d0af;
+                padding: 13px 13px;
+                border-radius: 7px;
+                text-align: center;
+                margin: 0 3vw 0 3vw;
+            }
+            .text {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px 0 30px;
+                font-size: 1.3vw;
+                max-width: 56.7vw;
+    
+            }
+            .pic{
+                width: 20vw;
+                height: auto;
+                border: 1px solid #468ce6;
+                border-radius: 4px;
+                padding: 5px;
+                background-color: #8bb8f2;
+            }
+        }
+    </style>
+    
 </head>
 <body>
-    heyyy
+    <h1>2032</h1>
+    <img id="backBtn" src="images/back.png" alt="">
+    <div>
+        <div class="block">
+            <h2>Go Professional</h2>
+            <div class="info">
+                <img class="pic" src="images/cricket.webp" alt="">
+                <div class="text">
+                    <p>Another way to keep me competitive and feel accomplished is find a very niche sport or talent and train to become the best in the <strong>WORLD</strong>.
+                        Some examples now would be cricket and... idk.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block">
+            <h2>Get RICH</h2>
+            <div class="info">
+                <img class="pic" src="images\rich.jpg" alt="">
+                <div class="text">
+                    <p>I want to be rich, who WOULDN'T?!?! This year I will do everything possible to make money <strong>FAST</strong>, on top of my job. This is GRIND year.🤑🤑
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const backButton = document.getElementById("backBtn");
+
+        backButton.addEventListener("click", function(){ window.location.href = "../index.html"})
+    </script>
 </body>
 </html>

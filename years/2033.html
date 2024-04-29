@@ -3,9 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2033</title>
+    <meta name="theme-color" content="#f29aa1"/>
+    <style>
+        body {
+            background: linear-gradient(-20deg, rgb(60, 90, 255), rgb(106, 168, 255), rgb(166, 233, 255), rgb(252, 197, 255));
+        }
+        h1 {
+            text-align: center;
+            font-size: 10.5vw;
+            margin-top: 0;
+            border-bottom: solid;
+            border-color: #ff9810;
+            color: #ffd988;
+            text-shadow: 1px 0 #468ce6, -1px 0 #468ce6, 0 1px #468ce6, 0 -1px #468ce6,
+            1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6
+
+        }
+        #backBtn {
+            height: 80px;
+            width: 80px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 5vw;
+            font-family: monospace;
+        }
+        .info {
+            background-color: #f4d0af;
+            padding: 13px 13px;
+            border-radius: 7px;
+            
+        }
+        .text {
+            /*display: inline-block; */
+
+            margin: 0 10px 0 50px;
+            font-size: 5vw;
+            max-width: 63vw;
+            text-align: center;
+            font-family: Tahoma, sans-serif;
+
+        }
+        .pic {
+            margin: 0 50px 0 50px;
+            width: 60vw;
+            height: auto;
+            border: 1px solid #468ce6;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #8bb8f2;
+        }
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: 	#fbf4e6;
+            }
+            h1 {
+                text-align: center;
+                font-size: 5vw;
+                margin-top: 0;
+                border-bottom: solid;
+                border-color: #ff9810;
+                color: #ffd988;
+                text-shadow: 3px 0 #468ce6, -3px 0 #468ce6, 0 3px #468ce6, 0 -2px #468ce6,
+                   1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6;
+    
+            }
+            #backBtn {
+                height: 50px;
+                width: 50px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 2.6vw;
+            }
+            .info {
+                background-color: #f4d0af;
+                padding: 13px 13px;
+                border-radius: 7px;
+                text-align: center;
+                margin: 0 3vw 0 3vw;
+            }
+            .text {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px 0 30px;
+                font-size: 1.3vw;
+                max-width: 56.7vw;
+    
+            }
+            .pic{
+                width: 20vw;
+                height: auto;
+                border: 1px solid #468ce6;
+                border-radius: 4px;
+                padding: 5px;
+                background-color: #8bb8f2;
+            }
+        }
+    </style>
+    
 </head>
 <body>
-    heyyy
+    <h1>2033 <br>The Baller Stage</h1>
+    <img id="backBtn" src="images/back.png" alt="">
+    <div>
+        <div class="block">
+            <h2>Buy Expensive Toy</h2>
+            <div class="info">
+                <img class="pic" src="images/car.avif" alt="">
+                <div class="text">
+                    <p>I'm assuming the life style I lived to get to the point was frugal, which means I will allow myself to splurge. A nice new car, a boat or any cool toy that exists in the future.
+                         Even eating out more at fancier places would suffice. <br>
+                        <strong>It's important to treat yourself!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block">
+            <h2>Give Back</h2>
+            <div class="info">
+                <img class="pic" src="images\give.jpg" alt="">
+                <div class="text">
+                    <p>I want to begin spreading kindness, back to parents, where I lived and even random homeless people. I want to give away as thanks, and to feel like
+                        a mini <strong>Mr. Beast</strong>.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const backButton = document.getElementById("backBtn");
+
+        backButton.addEventListener("click", function(){ window.location.href = "../index.html"})
+    </script>
 </body>
 </html>

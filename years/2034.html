@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2034</title>
+    <meta name="theme-color" content="#f29aa1"/>
+    <style>
+        body {
+            background-color: 	#fbf4e6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 10.5vw;
+            margin-top: 0;
+            border-bottom: solid;
+            border-color: #468ce6;
+            color: #689fe8;
+            text-shadow: 1px 0 #468ce6, -1px 0 #468ce6, 0 1px #468ce6, 0 -1px #468ce6,
+            1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6
+
+        }
+        #backBtn {
+            height: 80px;
+            width: 80px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 5vw;
+            font-family: monospace;
+        }
+        .info {
+            background-color: #f4d0af;
+            padding: 13px 13px;
+            border-radius: 7px;
+            
+        }
+        .text {
+            /*display: inline-block; */
+
+            margin: 0 10px 0 50px;
+            font-size: 5vw;
+            max-width: 63vw;
+            text-align: center;
+            font-family: Tahoma, sans-serif;
+
+        }
+        .pic {
+            margin: 0 50px 0 50px;
+            width: 60vw;
+            height: auto;
+            border: 1px solid #468ce6;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #8bb8f2;
+        }
+        .poop {
+            font-size: 7vw;
+            text-align: center;
+            font-family:'Segoe UI', serif;
+            margin-bottom: 100px;
+        }
+        .me{
+            height: auto;
+            width: 300px;
+            border-radius: 50px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            body {
+                background-color: 	#fbf4e6;
+            }
+            h1 {
+                text-align: center;
+                font-size: 5vw;
+                margin-top: 0;
+                border-bottom: solid;
+                border-color: #468ce6;
+                color: #689fe8;
+                text-shadow: 3px 0 #468ce6, -3px 0 #468ce6, 0 3px #468ce6, 0 -2px #468ce6,
+                   1px 1px #468ce6, -1px -1px #468ce6, 1px -1px #468ce6, -1px 1px #468ce6;
+    
+            }
+            #backBtn {
+                height: 50px;
+                width: 50px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 2.6vw;
+            }
+            .info {
+                background-color: #f4d0af;
+                padding: 13px 13px;
+                border-radius: 7px;
+                text-align: center;
+                margin: 0 3vw 0 3vw;
+            }
+            .text {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px 0 30px;
+                font-size: 1.3vw;
+                max-width: 56.7vw;
+    
+            }
+            .pic{
+                width: 20vw;
+                height: auto;
+                border: 1px solid #468ce6;
+                border-radius: 4px;
+                padding: 5px;
+                background-color: #8bb8f2;
+            }
+            .poop {
+                font-size: 2vw;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .me{
+                height: auto;
+                width: 300px;
+                border-radius: 50px;
+                border: 2px solid #ccc;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+        }
+    </style>
+    
 </head>
 <body>
-    heyyy
+    <h1>2034 <br>The 10 Year Mark</h1>
+    <img id="backBtn" src="images/back.png" alt="">
+    <div>
+        <div class="block">
+            <h2>Start of a Journey</h2>
+            <div class="info">
+                <img class="pic" src="images/states.jpg" alt="">
+                <div class="text">
+                    <p>Taking inspiration from Mr. Thai, I also want to experience every state and go on roadtrips. Having a fridge filled with cheap magnetic souveneirs 
+                        is the end goal of my <strong>LIFE</strong>. Making memories is the best part of life so having the trips well documented will be helpful.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <h2>Experience Together</h2>
+            <div class="info">
+                <img class="pic" src="images/ping.jpg" alt="">
+                <div class="text">
+                    <p>This is the ideal time, atleast for me, to possibly be married and to focus on spending time with people I cherish. Friends, parents and luvs all fit into this category. It is important to spend time 
+                        with the people closest to you.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block">
+            <h2 style="font-size: 50px;">and more...</h2>
+            <div >
+                <div style="text-align: center;">
+                    <img src="images/me.jpg" alt="" class="me">
+                    <p class="poop">Anything after this is too far into the future to determine what I would want to do. I know I will never be bored and experience life to the fullest, the worst 
+                        feeling is regret once you've aged.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const backButton = document.getElementById("backBtn");
+
+        backButton.addEventListener("click", function(){ window.location.href = "../index.html"})
+    </script>
 </body>
 </html>
